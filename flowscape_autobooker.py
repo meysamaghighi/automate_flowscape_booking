@@ -49,7 +49,6 @@ def press_book(driver):
 today = datetime.today()
 
 need_to_select_building_and_floor = False
-user = "eaghmey"
 # building = "SEKI10 Kista"
 # floor = "Floor 8"
 desk = "326A"
@@ -69,7 +68,7 @@ time.sleep(2)
 # Open Chrome
 chrome_options = Options() # this is important for cookies to work
 
-chrome_options.add_argument(f"--user-data-dir=C:\\Users\\{user}\\AppData\\Local\\Google\\Chrome\\User Data")
+chrome_options.add_argument(f"--user-data-dir={os.path.expanduser('~')}\\AppData\\Local\\Google\\Chrome\\User Data")
 chrome_options.add_argument("--profile-directory=Default")  # Use the default Chrome profile
 
 driver = webdriver.Chrome(options=chrome_options)
