@@ -1,53 +1,36 @@
 # Desk Booking Automation Script
 
-### Author  
-**Meysam Aghighi**  
-Contact: [meysam.aghighi@gmail.com](mailto:meysam.aghighi@gmail.com) / [meysam.aghighi@ericsson.com](mailto:meysam.aghighi@ericsson.com)  
+### Authors  
+**Meysam Aghighi**
+Contact: [meysam.aghighi@gmail.com](mailto:meysam.aghighi@gmail.com) / [meysam.aghighi@ericsson.com](mailto:meysam.aghighi@ericsson.com)
+**Wei Li I**  
+Contact: [wei.i.li@ericsson.com](mailto:wei.i.li@ericsson.com)
 
 ---
 
 ## Description  
-This script automates desk booking in Flowscape. It searches for a desk, selects dates, and books it automatically, using saved credentials from your Chrome default profile.
+This script automates desk booking in Flowscape. It will book the selected desk in [flowscape-desk.yaml](flowscape-desk.yaml) for the next two weeks. It also uses your saved credentials for Edge to login.
 
 ---
 
 ## Usage  
-
-### 1. Update Configuration  
-Modify these variables in the script before running:  
-- `desk`: Desk number to be booked.  
-- `dates`: Days to book (ensure they match the month).
-
-### 2. Prerequisites  
+### 1. Prerequisites  
 - Install Python 3.x.  
-- Install dependencies:  
-  ```bash
-  pip install selenium pycryptodome pywin32
-- Ensure Chrome is installed and the **default profile** has your saved credentials.
+- Install dependencies: `pip install selenium pycryptodome pywin32`
 
----
+### 2. Update Configuration  
+Modify these in [flowscape-desk.yaml](flowscape-desk.yaml) before running:  
+- `building`
+- `floor`
+- `desk`
 
 ### 3. Run the Script  
-1. Save Chrome tabs before running the script because the script closes Chrome.
-2. Execute it in your Python environment.
+`python Edge_automate_flowscape_booking.py`
 
----
-
-### 4. Schedule Script Execution  
-- Add the script to Windows Task Scheduler for automated daily runs.
-
----
-
-### Assumptions  
-- You are already logged into Flowscape using Chrome's saved credentials.  
-
----
-
-### To-Do (WIP)  
-1. **Fix "Next Month" Navigation:** Currently fails when booking dates in the next month.  
-
+### 4. Full Automation  
+- Add the script to Windows Task Scheduler for automated daily runs. The best scheduled time is 12:01 since new desks open at noon.
 
 ---
 
 ### Contact  
-For issues or suggestions, please contact via email.
+For issues or suggestions, please contact the authors via email.
