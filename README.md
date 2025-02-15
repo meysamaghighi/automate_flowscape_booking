@@ -1,10 +1,8 @@
 # Desk Booking Automation Script
 
-### Authors  
-**Meysam Aghighi**
-Contact: [meysam.aghighi@gmail.com](mailto:meysam.aghighi@gmail.com) / [meysam.aghighi@ericsson.com](mailto:meysam.aghighi@ericsson.com)
-**Wei Li I**  
-Contact: [wei.i.li@ericsson.com](mailto:wei.i.li@ericsson.com)
+## Authors
+- **Meysam Aghighi** ([meysam.aghighi@gmail.com](mailto:meysam.aghighi@gmail.com)/[meysam.aghighi@ericsson.com](mailto:meysam.aghighi@ericsson.com))
+- **Wei Li I** ([wei.i.li@ericsson.com](mailto:wei.i.li@ericsson.com))
 
 ---
 
@@ -32,5 +30,5 @@ Modify these in [flowscape-desk.yaml](flowscape-desk.yaml) before running:
 
 ---
 
-### Contact  
+## Contact  
 For issues or suggestions, please contact the authors via email.
